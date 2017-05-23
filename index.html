@@ -33,7 +33,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body id="page-top">
@@ -55,8 +54,9 @@
                     <div class="header-content">
                         <div class="header-content-inner">
                             <h1>YT3 is a free and easy to use <strong>youtube to mp3</strong> converter ,it's simple and light-weight and lets you convert your favorite songs to mp3 within a wink of an eye!</h1>
-                            <input class="form-control" type="text" placeholder="Enter a keyword or something" id="search-youtube">
-                            <a href="#search-results" id="start-for-free" class="btn btn-outline btn-xl page-scroll">Start converting for Free!</a>
+                            <input class="form-control" type="text" placeholder="Enter video URL" id="youtube-url">
+                            <a href="#download-sound" id="start-for-free" class="btn btn-outline btn-xl page-scroll">download mp3</a> <span style="margin-left: 10px;margin-right: 10px; "> OR </span>
+                            <a href="#search-results" id="search-video" class="btn btn-outline btn-xl page-scroll">search <i class="fa fa-search"></i></a>
                         </div>
                     </div>
                 </div>
@@ -72,6 +72,7 @@
     <div id="search-results" class="search-results">
         <div class="col-md-8">
             <div class="video-container">
+                <input class="form-control" type="text" placeholder="Enter a keyword" id="search-video-bar">
                 <iframe width="660" height="425" src="https://www.youtube.com/embed/60ItHLz5WEA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
             </div>
             <a href="#download-sound" id="download-as-mp3" class="btn btn-outline-download btn-xl page-scroll">download as mp3</a>
@@ -165,14 +166,19 @@
 
     <section id="download-sound" class="download-sound">
         <div class="container">
-            <div class="col-md-12 text-center">
-                <i class="fa fa-spin fa-spinner"></i>
+            <div class="col-md-12 text-center download-now-container">
+                <a href="#" id="download-now" class="btn btn-outline-download-now btn-xl page-scroll">Download <i class="fa fa-download"></i></a>
             </div>
-            <div class="col-md-12 text-center">
-                <h1>your file will start downloading shortly...</h1>
-            </div>
-            <div class="col-md-12 text-center">
-                <a href="#page-top" id="convert-more" class="btn btn-outline-black btn-xl page-scroll">convert more!</a>
+            <div class="col-md-12 text-center downloading">
+                <div class="col-md-12 text-center">
+                    <i class="fa fa-spin fa-spinner"></i>
+                </div>
+                <div class="col-md-12 text-center">
+                    <h1>your file will start downloading shortly...</h1>
+                </div>
+                <div class="col-md-12 text-center">
+                    <a href="#page-top" id="convert-more" class="btn btn-outline-black btn-xl page-scroll">convert more!</a>
+                </div>
             </div>
         </div>
     </section>

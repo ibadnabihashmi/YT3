@@ -1,12 +1,6 @@
 (function($) {
     "use strict"; // Start of use strict
 
-    $('#download,#features,#cta,#contact').hide();
-
-    $('#start-for-free').click(function () {
-        $('#download').show();
-    });
-
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $(document).on('click', 'a.page-scroll', function(event) {
         var $anchor = $(this);
@@ -32,6 +26,25 @@
         offset: {
             top: 50
         }
+    });
+
+    $('.downloading').hide();
+    $('.search-results').hide();
+    $('.download-sound').hide();
+    $('.download-now-container').show();
+
+    $('#start-for-free').click(function (event) {
+        $('.download-sound').show();
+        $('#download-now').attr('href','http://www.youtubeinmp3.com/fetch/?video='+$('#youtube-url').val());
+    });
+
+    $('#search-video').click(function (event) {
+        $('.search-results').show();
+    });
+
+    $('#download-now').click(function (event) {
+        $('.downloading').show();
+        $('.download-now-container').hide();
     });
 
 })(jQuery); // End of use strict
