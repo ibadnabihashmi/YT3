@@ -278,6 +278,7 @@ div.search-results .col-md-4 .list-group {
   overflow: auto;
 }
 div.search-results .col-md-4 .list-group .list-group-item {
+  cursor: pointer;
   position: relative !important;
   display: block !important;
   padding: 10px 15px !important;
@@ -288,12 +289,12 @@ div.search-results .col-md-4 .list-group .list-group-item {
 }
 div.search-results .col-md-4 .list-group .list-group-item div img {
   top: 0px;
-  width: 66px;
+  width: 115px;
   position: absolute;
   left: 0px;
 }
 div.search-results .col-md-4 .list-group .list-group-item .vid-details {
-  margin-left: 80px;
+  margin-left: 110px;
 }
 div.search-results .col-md-4 .list-group .list-group-item .vid-details h4 {
   color: white;
