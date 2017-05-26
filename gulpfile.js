@@ -6,6 +6,7 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
+var webserver = require('gulp-webserver');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -93,4 +94,13 @@ gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() 
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
     gulp.watch('js/**/*.js', browserSync.reload);
+});
+
+gulp.task('prod', function() {
+    gulp.src('')
+        .pipe(webserver({
+            host: '0.0.0.0',
+            port: 3000,
+            fallback: 'index.html'
+        }));
 });

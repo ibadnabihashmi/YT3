@@ -175,6 +175,7 @@ header .header-content .header-content-inner h1 {
   font-size: 30px;
 }
 header .header-content .header-content-inner input {
+  color: white;
   margin: 25px 0px;
   height: 50px;
   border-radius: 41px;
@@ -246,6 +247,7 @@ div.search-results .col-md-8 {
   padding: 70px 0px 0px 150px;
 }
 div.search-results .col-md-8 input {
+  color: white;
   width: 660px;
   margin: 25px 0px;
   height: 50px;
