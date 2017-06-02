@@ -560,3 +560,35 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+.terms {
+  background-color: #e6e6e6;
+}
+.terms header {
+  min-height: 70% !important;
+  z-index: -1;
+}
+.terms header h1 {
+  margin-top: 180px;
+  font-weight: bold;
+  font-size: 85px;
+}
+.terms .terms-content-container .container {
+  margin-top: -104px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 21px 0px rgba(140, 139, 139, 0.75);
+  -moz-box-shadow: 0px 3px 21px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 3px 21px 0px rgba(82, 82, 82, 0.75);
+}
+.terms footer {
+  position: relative;
+  height: 117px;
+  margin-top: -60px;
+  z-index: -123;
+}
+.terms footer .container {
+  margin-top: 45px;
+}
+.active-nav {
+  border-bottom: 3px solid #fdcc52;
+}
